@@ -16,6 +16,7 @@ wget 31.220.56.219/painel.tar
 tar -xvf painel.tar
 cd /var/www
 chmod -R 777 painel.tar
+rm -r painel.tar
 rm /etc/localtime
 ln -s /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
 sudo dpkg-reconfigure tzdata
