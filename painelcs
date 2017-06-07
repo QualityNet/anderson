@@ -12,7 +12,7 @@ apt-get install phpmyadmin -y
 echo "include /etc/phpmyadmin/apache.conf" | sudo tee -a /etc/apache2/apache2.conf
 service apache2 restart
 cd /var/www
-wget 31.220.111.1/m4/painel.tar
+wget 31.220.56.219/painel.tar
 tar -xvf painel.tar
 cd /var/www
 chmod -R 777 painel.tar
