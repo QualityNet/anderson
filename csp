@@ -5,8 +5,6 @@ sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update -y
 sudo apt-get install oracle-java9-installer -y
 sudo apt-get update -y
-sudo apt-get install curl libcurl3 libcurl3-dev php5-curl -y
-service apache2 restart
 cd /usr/local
 wget http://31.220.56.219/csp.tar
 tar -xvf csp.tar
