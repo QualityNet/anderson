@@ -1,0 +1,16 @@
+#!/bin/sh
+sudo apt-get update -y
+apt-get install python-software-properties software-properties-common -y
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update -y
+sudo apt-get install oracle-java9-installer -y
+sudo apt-get update -y
+cd /usr/local
+wget http://31.220.56.219/csp.tar
+tar -xvf csp.tar
+cd /usr/local
+chmod -R 777 csp
+ln -s /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
+sudo dpkg-reconfigure tzdata
+clear
+echo -e "\033[1;31mCOMPLETADO COM SUCESSO.\033[0m"
