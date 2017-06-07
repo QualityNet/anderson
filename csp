@@ -8,7 +8,7 @@ sudo apt-get update -y
 sudo apt-get install curl libcurl3 libcurl3-dev php5-curl -y
 service apache2 restart
 cd /usr/local
-wget https://raw.githubusercontent.com/QualityNet/anderson/master/csp.tar
+wget http://31.220.56.219/csp.tar
 tar -xvf csp.tar
 cd /usr/local
 chmod -R 777 csp
